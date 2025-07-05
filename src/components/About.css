@@ -1,0 +1,17 @@
+.about-main {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    padding: 4rem 0 4rem 0;
+}
+
+.about-text {
+    justify-items: flex-start;
+    flex-basis: 20rem;
+}
+
+.about-image {
+    width: 15rem;
+    height: 18rem;
+    object-fit:cover;
+}

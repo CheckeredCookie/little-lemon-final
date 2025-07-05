@@ -1,0 +1,21 @@
+.main-footer {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: #495e57;
+}
+
+.footer-section {
+  justify-items: center;
+}
+
+.footer-list {
+  color: #F4CE14;
+}
+
+.list-item {
+  list-style: none;
+  color: #edefee;
+  justify-self: flex-start;
+}

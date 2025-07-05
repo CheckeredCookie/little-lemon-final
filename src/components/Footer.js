@@ -1,27 +1,35 @@
+import './Footer.css';
+
 const Footer = () => {
     return (
-        <footer>
-            <label>Doormat Navigation</label>
-            <ul>
-                <li>Home</li>
-                <li>About</li>
-                <li>Menu</li>
-                <li>Reservations</li>
-                <li>Order online</li>
-                <li>Login</li>
-            </ul>
-            <label>Contact</label>
-            <ul>
-                <li>Address</li>
-                <li>Phone number</li>
-                <li>Email</li>
-            </ul>
-            <label>Social Media Links</label>
-            <ul>
-                <li>Address</li>
-                <li>Phone number</li>
-                <li>Email</li>
-            </ul>
+        <footer className="main-footer">
+            <div className="footer-section">
+                <h3 className="footer-list">Doormat Navigation</h3>
+                <ul>
+                    <li className="list-item">Home</li>
+                    <li className="list-item">About</li>
+                    <li className="list-item">Menu</li>
+                    <li className="list-item">Reservations</li>
+                    <li className="list-item">Order online</li>
+                    <li className="list-item">Login</li>
+                </ul>
+            </div>
+            <div className="footer-section">
+                <h3 className="footer-list">Contact</h3>
+                <ul>
+                    <li className="list-item">Address</li>
+                    <li className="list-item">Phone number</li>
+                    <li className="list-item">Email</li>
+                </ul>
+            </div>
+            <div className="footer-section">
+                <h3 className="footer-list">Social Media Links</h3>
+                <ul>
+                    <li className="list-item">Address</li>
+                    <li className="list-item">Phone number</li>
+                    <li className="list-item">Email</li>
+                </ul>
+                </div>
         </footer>
     );
 }

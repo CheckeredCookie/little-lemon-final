@@ -1,0 +1,29 @@
+.tcard-container {
+  background-color: #edefee;
+  border-radius: 10px;
+  width: 12rem;
+  height: 12rem;
+  padding: 1rem 1rem 1rem 1rem;
+}
+
+
+.tcard-middle {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.tcard-image {
+    height: 5rem;
+    width: 5rem;
+}
+
+.tcard-desc {
+    width: 12rem;
+    flex-grow: 1;
+}
+
+.tcard-link {
+    align-self: flex-start;
+    margin-bottom: 1rem;
+}

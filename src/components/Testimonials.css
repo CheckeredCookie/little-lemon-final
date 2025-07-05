@@ -1,0 +1,16 @@
+.main-testimonial {
+    background-color: #495e57;
+    padding: 4rem 0 6rem 0;
+}
+
+.testimonial-title {
+    justify-self: center;
+    padding-bottom: 2rem;
+    color: #F4CE14;
+}
+
+.testimonial-cards {
+    display: flex;
+    gap: 2rem;
+    justify-self: center;
+}

@@ -1,0 +1,16 @@
+.main-all {
+    display: flex;
+    background-color: #495e57;
+    justify-content: center;
+    padding-bottom: 1rem;
+    gap: 12rem;
+}
+
+.all-right-side {
+    width: 15rem;
+    height: 15rem;
+    object-fit: cover;
+    padding: 1rem 1rem 1rem 1rem;
+    border-radius: 10%;
+}
+
