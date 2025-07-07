@@ -13,3 +13,4 @@ test('renders learn react link', () => {
   const linkElement = screen.getByText(/learn react/i);
   expect(linkElement).toBeInTheDocument();
 });
+/*go back when have time and solve issues relating to tests*/

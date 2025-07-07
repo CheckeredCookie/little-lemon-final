@@ -23,7 +23,7 @@ const initializeTimes = () => {
     const today = new Date();
 
     console.log("fetch api worked in initializeTimes");
-    return window.fetchAPI(today);
+    return window.fetchAPI(today); /*go back and do this with the proper api when you have time */
 
 }
 
