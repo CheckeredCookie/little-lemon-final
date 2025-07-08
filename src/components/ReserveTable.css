@@ -4,22 +4,28 @@
 } */
 
 .reserve-text {
-    width: 12rem;
+    width: 24rem;
 }
 
 .reserve-title {
     font-family: "Markazi Text Medium", sans-serif;
+    font-size: 4rem;
     color: #F4CE14;
+    margin-bottom: 0rem;
 }
 
 .reserve-subtitle {
     font-family: "Markazi Text Regular", sans-serif;
+    font-size: 2.5rem;
     color: #EDEFEE;
+    margin-bottom: 0rem;
 }
 
 .reserve-desc {
     font-family: "Karla Medium", sans-serif;
+    font-size: 1rem;
     color: #EDEFEE;
+    margin-bottom: 1.5rem;
 }
 
 

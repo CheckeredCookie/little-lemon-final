@@ -14,6 +14,8 @@
 }
 
 .tcard-image {
+    object-fit: cover;
+    border-radius: 10%;
     height: 5rem;
     width: 5rem;
 }

@@ -8,30 +8,28 @@ import React, { useReducer } from 'react';
 import './Main.css';
 
 
-const updateTimes = (state, action) => {
-    console.log("state: ", state, " action: ", action);
-    if (action && action.type === "update_times") {
-        const selectedDate = new Date(action.payload);
-        console.log("dispatch worked, payload results: ", selectedDate)
-
-        return window.fetchAPI(selectedDate);
-    }
-    return state;
-}
-
-const initializeTimes = () => {
-    const today = new Date();
-
-    console.log("date of today", today);
-    return window.fetchAPI(today); /*go back and do this with the proper api when you have time */
-
-}
-
 
 
 const Main = () => {
+    const updateTimes = (state, action) => {
+        console.log("state: ", state, " action: ", action);
+        if (action && action.type === "update_times") {
+            const selectedDate = new Date(action.payload);
+            console.log("dispatch worked, payload results: ", selectedDate)
+
+            return window.fetchAPI(selectedDate);
+        }
+        return state;
+    }
+
+    const initializeTimes = () => {
+        const today = new Date();
+        return window.fetchAPI(today); /*go back and do this with the proper api when you have time */
+    }
+
     const [availableTimes, dispatch] = useReducer(updateTimes, null, initializeTimes);
     const navigate = useNavigate();
+
 
     const submitForm = (formData) => {
         if (window.submitAPI(formData)) {

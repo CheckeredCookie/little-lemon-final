@@ -1,6 +1,6 @@
 .main-footer {
   display: flex;
-  gap: 20px;
+  gap: 2rem;
   flex-wrap: wrap;
   justify-content: center;
   background-color: #495e57;
@@ -17,5 +17,5 @@
 .list-item {
   list-style: none;
   color: #edefee;
-  justify-self: flex-start;
+  justify-self: left;
 }

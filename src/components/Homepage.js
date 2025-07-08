@@ -12,6 +12,7 @@ const Main = () => {
     return (
         <>
             <ReserveTableSection/>
+            <br />
             <Specials />
             <Testimonials />
             <About />

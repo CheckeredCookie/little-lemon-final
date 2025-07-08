@@ -6,11 +6,18 @@
     gap: 12rem;
 }
 
+.all-left-side {
+    display: flex;
+    flex-direction: column;
+    gap: 0rem;
+}
+
 .all-right-side {
-    width: 15rem;
-    height: 15rem;
+    width: 20rem;
+    height: 22rem;
     object-fit: cover;
-    padding: 1rem 1rem 1rem 1rem;
-    border-radius: 10%;
+    border-radius: 5%;
+    overflow: hidden;
+    transform: translateY(3rem);
 }
 
