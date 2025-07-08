@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 
 const BookingForm = ({availableTimes, dispatch, submitForm}) => {
+    const today = new Date().toISOString().split("T")[0];
+
     const [resDate, setResDate] = useState("");
     const [resTime, setResTime] = useState('17:00');
     const [numGuests, setNumGuests] = useState(1);
@@ -41,11 +43,22 @@ const BookingForm = ({availableTimes, dispatch, submitForm}) => {
 
     return(
     <>
-        <form onSubmit={handleSubmit} style={{ display: "grid", maxWidth: "200px", gap: "20px" }}>
+        <form
+            onSubmit={handleSubmit}
+            style={{ display: "grid", maxWidth: "200px", gap: "20px" }}
+            aria-label="Table reservation form"
+        >
             <label htmlFor="res-date">Choose date</label>
-            <input value={resDate} onChange={handleResDateChange} type="date" id="res-date" />
+            <input
+                value={resDate}
+                onChange={handleResDateChange}
+                type="date"
+                id="res-date"
+                required
+                min={today}
+            />
             <label htmlFor="res-time">Choose time</label>
-            <select value={resTime} onChange={handleTimeChange} id="res-time">
+            <select value={resTime} onChange={handleTimeChange} id="res-time" required >
                 {availableTimes.map((time) => (
                     <option key={time} value={time}>
                         {time}
@@ -53,13 +66,13 @@ const BookingForm = ({availableTimes, dispatch, submitForm}) => {
                 ))}
             </select>
             <label htmlFor="guests">Number of guests</label>
-            <input value={numGuests} onChange={handleNumGuestsChange} type="number" placeholder="1" min="1" max="10" id="guests" />
+            <input value={numGuests} onChange={handleNumGuestsChange} type="number" placeholder="1" required min="1" max="10" id="guests" />
             <label htmlFor="occasion">Occasion</label>
-            <select value={occasion} onChange={handleOccasionChange} id="occasion">
+            <select value={occasion} onChange={handleOccasionChange} id="occasion" required >
                 <option>Birthday</option>
                 <option>Anniversary</option>
             </select>
-            <input type="submit" value="Make Your reservation" />
+            <input disabled={!resDate} type="submit" value="Make Your reservation" />
         </form>
     </>
     )
